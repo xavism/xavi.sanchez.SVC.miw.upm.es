@@ -7,7 +7,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<artifactId>IWVG.Forge</artifactId>
 	<groupId>es.upm.miw</groupId>
-	<version>1.0.0-SNAPSHOT</version>
+	<version>1.0.0</version>
 	<packaging>jar</packaging>
 
 	<name>${project.groupId}.${project.artifactId}</name>
@@ -48,6 +48,8 @@
 				<logs.level.root>debug</logs.level.root>
 				<database.user>root</database.user>
 				<database.password></database.password>
+				<database.driver>com.mysql.jdbc.Driver</database.driver>
+				<database.url.jdbc.mysql>//localhost:3306/spai</database.url.jdbc.mysql>
 			</properties>
 		</profile>
 		<!-- mvn install -Denvironment.type=preproduction -->
@@ -61,8 +63,10 @@
 			</activation>
 			<properties>
 				<logs.level.root>info</logs.level.root>
-				<database.user>myUser</database.user>
-				<database.password>myPass</database.password>
+				<database.user>miwXX</database.user>
+				<database.password>123456</database.password>
+				<database.driver>com.mysql.jdbc.Driver</database.driver>
+				<database.url.jdbc.mysql>//localhost:3306/miwXX</database.url.jdbc.mysql>
 			</properties>
 		</profile>
 		<!-- mvn install -Denvironment.type=production -->
@@ -76,8 +80,10 @@
 			</activation>
 			<properties>
 				<logs.level.root>error</logs.level.root>
-				<database.user>otherUser</database.user>
-				<database.password>otherPass</database.password>
+				<database.user>u3546</database.user>
+				<database.password>654321</database.password>
+				<database.driver>com.mysql.jdbc.Driver</database.driver>
+				<database.url.jdbc.mysql>//localhost:3306/u3546</database.url.jdbc.mysql>
 			</properties>
 		</profile>
 	</profiles>
@@ -159,9 +165,9 @@
 
 	<developers>
 		<developer>
-			<name>Name</name>
+			<name>Xavi</name>
 			<id>Id</id>
-			<email>mail@gmail.com</email>
+			<email>xavi.sanchez.mir@gmail.com</email>
 			<organization>MIW UPM</organization>
 			<roles>
 				<role>Architect</role>
