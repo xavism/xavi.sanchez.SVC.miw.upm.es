@@ -22,5 +22,10 @@ public class TestC21 {
 	public void testM2() {
 		assertEquals("m2", obj.m2());
 	}
+	
+	@Test
+	public void testM3() {
+		assertEquals("m3", obj.m3());
+	}
 
 }
